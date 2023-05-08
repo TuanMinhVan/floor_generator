@@ -9,7 +9,7 @@ class DatabaseBuilderWriter extends Writer {
 
   @override
   Class write() {
-    final databaseBuilderName = '_\$${_databaseName}Builder';
+    final databaseBuilderName = '${_databaseName}Builder';
 
     final nameField = Field((builder) => builder
       ..name = 'name'
